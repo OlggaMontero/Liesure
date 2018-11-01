@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour
     public bool grounded;
     public float jumpPower = 6.5f;
 
+
     private Rigidbody2D rb2d;
     private Animator anim;
     private bool jump;
@@ -59,12 +60,12 @@ public class PlayerController : MonoBehaviour
 
         if (h > 0.1f)                                               //Cambiar la orientación del personaje
         {
-            transform.localScale = new Vector3(1f, 1f, 1f);
+            transform.localScale = new Vector3(-0.2f, 0.2f, 0.2f);
         }
 
         if (h < -0.1f)
         {
-            transform.localScale = new Vector3(-1f, 1f, 1f);
+            transform.localScale = new Vector3(0.2f, 0.2f, 0.2f);
         }
 
         if (jump)
@@ -80,6 +81,8 @@ public class PlayerController : MonoBehaviour
     void OnBecameInvisible()
     {
         transform.position = new Vector3(-8, 0, 0);
-        
+        Debug.Log("EY");
     }
+
+
 }

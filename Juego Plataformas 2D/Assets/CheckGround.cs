@@ -56,4 +56,5 @@ public class CheckGround : MonoBehaviour {
             player.grounded = false;
         }
     }
+
 }
