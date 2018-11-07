@@ -6,6 +6,7 @@ public class CheckGround : MonoBehaviour {
 
 	private PlayerController player;
     private Rigidbody2D rb2d;
+    
 
 
     
@@ -14,6 +15,7 @@ public class CheckGround : MonoBehaviour {
     {
         player = GetComponentInParent<PlayerController>(); //Poder acceder a las variables públicas de player
         rb2d = GetComponentInParent<Rigidbody2D>();
+        
     }
 
     void OnCollisionEnter2D(Collision2D col)        //La primera vez que toca una plataforma
@@ -38,6 +40,12 @@ public class CheckGround : MonoBehaviour {
         {
             player.transform.parent = col.transform;
             player.grounded = true;
+        }
+
+        if (col.gameObject.tag == "Puerta")
+        {
+            Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
+            //Debug.Log("HOLA");
         }
 
     }

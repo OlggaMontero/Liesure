@@ -60,12 +60,12 @@ public class PlayerController : MonoBehaviour
 
         if (h > 0.1f)                                               //Cambiar la orientación del personaje
         {
-            transform.localScale = new Vector3(-0.49f, 0.49f, 0.49f);
+            transform.localScale = new Vector3(-0.1f, 0.1f, 0.1f);
         }
 
         if (h < -0.1f)
         {
-            transform.localScale = new Vector3(0.49f, 0.49f, 0.49f);
+            transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
         }
 
         if (jump)
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour
     void OnBecameInvisible()
     {
         transform.position = new Vector3(-8, 0, 0);
-        Debug.Log("EY");
+        //Debug.Log("EY");
     }
 
 
