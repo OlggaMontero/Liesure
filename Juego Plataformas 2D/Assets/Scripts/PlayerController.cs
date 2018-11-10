@@ -8,18 +8,22 @@ public class PlayerController : MonoBehaviour
     public float maxSpeed = 5f;
     public float speed = 2f;
     public bool grounded;
+    public bool carry;
     public float jumpPower = 6.5f;
+    public int nMaleta;
 
 
     private Rigidbody2D rb2d;
     private Animator anim;
     private bool jump;
+    
 
     // Use this for initialization
     void Start()
     {
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        carry = false;
     }
 
     // Update is called once per frame
@@ -27,6 +31,7 @@ public class PlayerController : MonoBehaviour
     {
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
         anim.SetBool("Grounded", grounded);
+        anim.SetBool("Carry", carry);
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
