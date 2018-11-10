@@ -2,15 +2,17 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Deliver : MonoBehaviour {
+public class PickUp : MonoBehaviour
+{
 
     public PlayerController player;
-    public float nHab;
+    //public float nHab;
 
     private bool inside;
 
     // Use this for initialization
-    void Start () {
+    void Start()
+    {
         inside = false;
         //player = gameObject.GetComponent<PlayerController>(); //Poder acceder a las variables públicas de player
     }
@@ -21,10 +23,12 @@ public class Deliver : MonoBehaviour {
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL
             {
-                if (player.carry == true)
+                if (player.carry == false)
                 {
-                    player.carry = false;
+                    player.carry = true;
+                    player.nMaleta = Random.Range(1, 10);
                     Debug.Log(player.carry);
+                    Debug.Log(player.nMaleta);
                 }
             }
 
@@ -51,24 +55,4 @@ public class Deliver : MonoBehaviour {
 
         }
     }
-
-
-
-
-
-    // Update is called once per frame
-    /* void Update () {
-         if (transform.position.x > player.transform.position.x -0.3 && transform.position.x < player.transform.position.x + 0.3
-             && transform.position.y > player.transform.position.y - 0.3 && transform.position.y < player.transform.position.y + 0.3)
-         {
-             if (Input.GetKeyDown(KeyCode.Space))
-             {
-                 Debug.Log("AHHHHHHHHHHHH");
-             }
-
-         }
-     }*/
-
-
-
 }
