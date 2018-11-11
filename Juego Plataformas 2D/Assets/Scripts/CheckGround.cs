@@ -37,6 +37,11 @@ public class CheckGround : MonoBehaviour {
             //Debug.Log("Hello");
         }
 
+        if (col.gameObject.tag == "MainGround")
+        {
+            player.grounded = true;
+        }
+
         if (col.gameObject.tag == "Plataforma")
         {
             player.transform.parent = col.transform;
@@ -51,6 +56,11 @@ public class CheckGround : MonoBehaviour {
         {
             player.grounded = false;
             
+        }
+
+        if (col.gameObject.tag == "MainGround")
+        {
+            player.grounded = false;
         }
 
         if (col.gameObject.tag == "Plataforma")

@@ -19,6 +19,7 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
+        
         if (inside == true && Input.GetKeyDown(KeyCode.Space))
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL
@@ -27,8 +28,13 @@ public class PickUp : MonoBehaviour
                 {
                     player.carry = true;
                     player.nMaleta = Random.Range(1, 10);
-                    Debug.Log(player.carry);
-                    Debug.Log(player.nMaleta);
+                    //Debug.Log(player.carry);
+                    Debug.Log("Toma la maleta " + player.nMaleta);
+                }
+
+                else
+                {
+                    Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
                 }
             }
 

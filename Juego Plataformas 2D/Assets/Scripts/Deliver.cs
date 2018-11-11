@@ -24,7 +24,13 @@ public class Deliver : MonoBehaviour {
                 if (player.carry == true)
                 {
                     player.carry = false;
-                    Debug.Log(player.carry);
+                    //Debug.Log(player.carry);
+                    Debug.Log("Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                }
+
+                else
+                {
+                    Debug.Log("No tienes ninguna maleta encima");
                 }
             }
 
