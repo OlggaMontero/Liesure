@@ -6,7 +6,8 @@ public class PickUp : MonoBehaviour
 {
 
     public PlayerController player;
-    //public float nHab;
+    public List<int> iList;
+    
 
     private bool inside;
 
@@ -14,7 +15,24 @@ public class PickUp : MonoBehaviour
     void Start()
     {
         inside = false;
-        //player = gameObject.GetComponent<PlayerController>(); //Poder acceder a las variables públicas de player
+        player.carry = false;
+
+        iList = new List<int>();
+
+        
+        iList.Add(46);
+        iList.Add(53);
+        iList.Add(531);
+        iList.Add(73);
+        iList.Add(331);
+        iList.Add(2);
+        iList.Add(7);
+        iList.Add(842);
+        iList.Add(732);
+        iList.Add(634);
+
+
+
     }
 
     void Update()
@@ -24,17 +42,25 @@ public class PickUp : MonoBehaviour
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL
             {
-                if (player.carry == false)
+                if (iList.Count > 0)
                 {
-                    player.carry = true;
-                    player.nMaleta = Random.Range(1, 10);
-                    //Debug.Log(player.carry);
-                    Debug.Log("Toma la maleta " + player.nMaleta);
+                    if (player.carry == false)
+                    {
+                        player.carry = true;
+                        player.nMaleta = iList[Random.Range(0, iList.Count - 1)];
+                        //Debug.Log(player.carry);
+                        Debug.Log("Toma la maleta " + player.nMaleta);
+                    }
+
+                    else
+                    {
+                        Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
+                    }
                 }
 
                 else
                 {
-                    Debug.Log("Ya llevas encima la maleta " + player.nMaleta);
+                    Debug.Log("No quedan más maletas");
                 }
             }
 

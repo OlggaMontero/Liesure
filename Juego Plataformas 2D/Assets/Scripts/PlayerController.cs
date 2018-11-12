@@ -24,6 +24,7 @@ public class PlayerController : MonoBehaviour
         rb2d = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         carry = false;
+        nMaleta = 0;
     }
 
     // Update is called once per frame

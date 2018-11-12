@@ -5,6 +5,7 @@ using UnityEngine;
 public class Deliver : MonoBehaviour {
 
     public PlayerController player;
+    public PickUp carrito;
     public float nHab;
 
     private bool inside;
@@ -12,7 +13,7 @@ public class Deliver : MonoBehaviour {
     // Use this for initialization
     void Start () {
         inside = false;
-        //player = gameObject.GetComponent<PlayerController>(); //Poder acceder a las variables públicas de player
+        
     }
 
     void Update()
@@ -23,9 +24,20 @@ public class Deliver : MonoBehaviour {
             {
                 if (player.carry == true)
                 {
+                    if (player.nMaleta == nHab)
+                    {
+                        Debug.Log("¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                        
+                    }
+
+                    else
+                    {
+                        Debug.Log("¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                    }
+
+                    carrito.iList.Remove(player.nMaleta);
                     player.carry = false;
-                    //Debug.Log(player.carry);
-                    Debug.Log("Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                    
                 }
 
                 else
