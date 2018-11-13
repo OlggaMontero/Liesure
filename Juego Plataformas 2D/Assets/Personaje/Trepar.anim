@@ -1262,15 +1262,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.98333335
         value: {x: 0, y: 0, z: 459.104}
-        inSlope: {x: 0, y: 0, z: -70.859924}
-        outSlope: {x: 0, y: 0, z: -70.859924}
+        inSlope: {x: 0, y: 0, z: -210.60042}
+        outSlope: {x: 0, y: 0, z: -210.60042}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-        value: {x: 0, y: 0, z: 458.497}
+        value: {x: 0, y: 0, z: 370.543}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -1818,15 +1818,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.98333335
         value: {x: 0, y: 0, z: -73.235}
-        inSlope: {x: 0, y: 0, z: 80.009926}
-        outSlope: {x: 0, y: 0, z: 80.009926}
+        inSlope: {x: 0, y: 0, z: 236.75977}
+        outSlope: {x: 0, y: 0, z: 236.75977}
         tangentMode: 0
         weightedMode: 0
         inWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
         outWeight: {x: 0.33333334, y: 0.33333334, z: 0.33333334}
       - serializedVersion: 3
         time: 1
-        value: {x: 0, y: 0, z: -72.541}
+        value: {x: 0, y: 0, z: 72.541}
         inSlope: {x: 0, y: 0, z: 0}
         outSlope: {x: 0, y: 0, z: 0}
         tangentMode: 0
@@ -4814,7 +4814,35 @@ AnimationClip:
       m_RotationOrder: 4
     path: Cadera/PiernaIz1
   m_ScaleCurves: []
-  m_FloatCurves: []
+  m_FloatCurves:
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: flip
+    path: IK/ManoIz
+    classID: 114
+    script: {fileID: 11500000, guid: 99091f75dac5d4ede961d37f71798fc6, type: 3}
   m_PPtrCurves: []
   m_SampleRate: 60
   m_WrapMode: 0
@@ -4934,6 +4962,13 @@ AnimationClip:
       script: {fileID: 0}
       typeID: 4
       customType: 4
+      isPPtrCurve: 0
+    - serializedVersion: 2
+      path: 3350663472
+      attribute: 2600395861
+      script: {fileID: 11500000, guid: 99091f75dac5d4ede961d37f71798fc6, type: 3}
+      typeID: 114
+      customType: 0
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 4102295991
@@ -9430,15 +9465,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.98333335
         value: 459.104
-        inSlope: -70.859924
-        outSlope: -70.859924
+        inSlope: -210.60042
+        outSlope: -210.60042
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: 458.497
+        value: 370.543
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -11107,15 +11142,15 @@ AnimationClip:
       - serializedVersion: 3
         time: 0.98333335
         value: -73.235
-        inSlope: 80.009926
-        outSlope: 80.009926
+        inSlope: 236.75977
+        outSlope: 236.75977
         tangentMode: 136
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
       - serializedVersion: 3
         time: 1
-        value: -72.541
+        value: 72.541
         inSlope: 0
         outSlope: 0
         tangentMode: 136
@@ -19514,6 +19549,34 @@ AnimationClip:
     path: Cadera/Espalda/BrazoDer/ManoDer
     classID: 4
     script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: Infinity
+        outSlope: Infinity
+        tangentMode: 103
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: flip
+    path: IK/ManoIz
+    classID: 114
+    script: {fileID: 11500000, guid: 99091f75dac5d4ede961d37f71798fc6, type: 3}
   m_EulerEditorCurves:
   - curve:
       serializedVersion: 2
@@ -19642,7 +19705,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cadera/PiernaIz1/PiernaIz2
+    path: Cadera/Espalda/BrazoDer/ManoDer
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19652,7 +19715,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cadera/PiernaIz1/PiernaIz2
+    path: Cadera/Espalda/BrazoDer/ManoDer
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19662,7 +19725,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Cadera/PiernaIz1/PiernaIz2
+    path: Cadera/Espalda/BrazoDer/ManoDer
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19672,7 +19735,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cadera/PiernaDer1/PiernaDer2
+    path: Cadera/PiernaIz1/PiernaIz2
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19682,7 +19745,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cadera/PiernaDer1/PiernaDer2
+    path: Cadera/PiernaIz1/PiernaIz2
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19692,37 +19755,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Cadera/PiernaDer1/PiernaDer2
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.z
-    path: Cadera/Espalda/BrazoDer
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.y
-    path: Cadera/Espalda/BrazoDer
-    classID: 4
-    script: {fileID: 0}
-  - curve:
-      serializedVersion: 2
-      m_Curve: []
-      m_PreInfinity: 2
-      m_PostInfinity: 2
-      m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cadera/Espalda/BrazoDer
+    path: Cadera/PiernaIz1/PiernaIz2
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19762,7 +19795,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cadera/Espalda/BrazoIz/ManoIz
+    path: Cadera/PiernaDer1/PiernaDer2
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19772,7 +19805,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cadera/Espalda/BrazoIz/ManoIz
+    path: Cadera/PiernaDer1/PiernaDer2
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19782,7 +19815,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.x
-    path: Cadera/Espalda/BrazoIz/ManoIz
+    path: Cadera/PiernaDer1/PiernaDer2
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19821,8 +19854,8 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_LocalEulerAngles.x
-    path: Cadera/Espalda/BrazoDer/ManoDer
+    attribute: m_LocalEulerAngles.z
+    path: Cadera/Espalda/BrazoDer
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19832,7 +19865,37 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.y
-    path: Cadera/Espalda/BrazoDer/ManoDer
+    path: Cadera/Espalda/BrazoDer
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cadera/Espalda/BrazoDer
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.x
+    path: Cadera/Espalda/BrazoIz/ManoIz
+    classID: 4
+    script: {fileID: 0}
+  - curve:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    attribute: m_LocalEulerAngles.y
+    path: Cadera/Espalda/BrazoIz/ManoIz
     classID: 4
     script: {fileID: 0}
   - curve:
@@ -19842,7 +19905,7 @@ AnimationClip:
       m_PostInfinity: 2
       m_RotationOrder: 4
     attribute: m_LocalEulerAngles.z
-    path: Cadera/Espalda/BrazoDer/ManoDer
+    path: Cadera/Espalda/BrazoIz/ManoIz
     classID: 4
     script: {fileID: 0}
   m_HasGenericRootTransform: 0

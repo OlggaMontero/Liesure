@@ -4,28 +4,89 @@ using UnityEngine;
 
 public class Deliver : MonoBehaviour {
 
-    public GameObject player;
+    public PlayerController player;
+    public PickUp carrito;
     public float nHab;
+
+    private bool inside;
 
     // Use this for initialization
     void Start () {
+        inside = false;
         
     }
-	
-	// Update is called once per frame
-	void Update () {
-        if (transform.position.x > player.transform.position.x -0.3 && transform.position.x < player.transform.position.x + 0.3
-            && transform.position.y > player.transform.position.y - 0.3 && transform.position.y < player.transform.position.y + 0.3)
+
+    void Update()
+    {
+        if (inside == true && Input.GetKeyDown(KeyCode.Space))
         {
-            if (Input.GetKeyDown(KeyCode.Space))
+            if (player != null)                             //Hay que tener cuidado con las referencias NULL
             {
-                Debug.Log("AHHHHHHHHHHHH");
+                if (player.carry == true)
+                {
+                    if (player.nMaleta == nHab)
+                    {
+                        Debug.Log("¡GENIAL! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                        
+                    }
+
+                    else
+                    {
+                        Debug.Log("¡OH NO! Has entregado la maleta " + player.nMaleta + " en la habitación " + nHab);
+                    }
+
+                    carrito.iList.Remove(player.nMaleta);
+                    player.carry = false;
+                    
+                }
+
+                else
+                {
+                    Debug.Log("No tienes ninguna maleta encima");
+                }
             }
-            
+
         }
 
-        
-
-
     }
+
+
+
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            inside = true;
+
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D col)
+    {
+        if (col.gameObject.tag == "Player")
+        {
+            inside = false;
+
+        }
+    }
+
+
+
+
+
+    // Update is called once per frame
+    /* void Update () {
+         if (transform.position.x > player.transform.position.x -0.3 && transform.position.x < player.transform.position.x + 0.3
+             && transform.position.y > player.transform.position.y - 0.3 && transform.position.y < player.transform.position.y + 0.3)
+         {
+             if (Input.GetKeyDown(KeyCode.Space))
+             {
+                 Debug.Log("AHHHHHHHHHHHH");
+             }
+
+         }
+     }*/
+
+
+
 }

@@ -25,6 +25,7 @@ public class CheckGround : MonoBehaviour {
             rb2d.velocity = new Vector3(0f, 0f, 0f);
             player.transform.parent = col.transform;
             player.grounded = true;
+            
         }
     }
 	
@@ -36,16 +37,15 @@ public class CheckGround : MonoBehaviour {
             //Debug.Log("Hello");
         }
 
+        if (col.gameObject.tag == "MainGround")
+        {
+            player.grounded = true;
+        }
+
         if (col.gameObject.tag == "Plataforma")
         {
             player.transform.parent = col.transform;
             player.grounded = true;
-        }
-
-        if (col.gameObject.tag == "Puerta")
-        {
-            Physics2D.IgnoreCollision(col.gameObject.GetComponent<Collider2D>(), GetComponent<Collider2D>());
-            //Debug.Log("HOLA");
         }
 
     }
@@ -56,6 +56,11 @@ public class CheckGround : MonoBehaviour {
         {
             player.grounded = false;
             
+        }
+
+        if (col.gameObject.tag == "MainGround")
+        {
+            player.grounded = false;
         }
 
         if (col.gameObject.tag == "Plataforma")
