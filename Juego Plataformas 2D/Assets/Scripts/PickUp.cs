@@ -37,7 +37,9 @@ public class PickUp : MonoBehaviour
 
     void Update()
     {
-        
+
+        Debug.Log("Pick up" +player.carry);
+
         if (inside == true && Input.GetKeyDown(KeyCode.Space))
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL

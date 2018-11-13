@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Spawner : MonoBehaviour {
 
+    public PlayerController player;
     public GameObject maletas;
     public float intervalTime = 2f;
     public float rangeCreation = 2f;

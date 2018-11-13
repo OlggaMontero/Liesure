@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class Destroy : MonoBehaviour {
 
-    public PlayerController player;
+    //public PlayerController player;
+    public Spawner spawn;
 
     // Use this for initialization
     void Start () {
@@ -13,7 +14,7 @@ public class Destroy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        
+        Debug.Log("Deliver"+spawn.player.carry);
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -26,11 +27,11 @@ public class Destroy : MonoBehaviour {
 
         if (col.gameObject.tag == "Player")
         {
-            if (player.carry == true)
+            if (spawn.player.carry == true)
             {
-                player.carry = false;
+                spawn.player.carry = false;
                 //Debug.Log(player.carry);
-                Debug.Log("Se te ha caído la maleta " + player.nMaleta);
+                Debug.Log("Se te ha caído la maleta " + spawn.player.nMaleta);
             }
 
             else

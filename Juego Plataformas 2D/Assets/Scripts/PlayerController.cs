@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     public bool carry;
     public float jumpPower = 6.5f;
     public int nMaleta;
+    public PickUp control;
 
 
     private Rigidbody2D rb2d;
@@ -33,6 +34,8 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
         anim.SetBool("Grounded", grounded);
         anim.SetBool("Carry", carry);
+        carry = control.player.carry;
+        Debug.Log("PC" +carry);
 
         if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
         {
