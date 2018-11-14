@@ -14,7 +14,7 @@ public class Destroy : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        Debug.Log("Deliver"+spawn.player.carry);
+        //Debug.Log("Destroy"+spawn.player.carry);
     }
 
     void OnTriggerEnter2D(Collider2D col)

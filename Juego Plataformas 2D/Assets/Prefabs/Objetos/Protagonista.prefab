@@ -551,7 +551,7 @@ GameObject:
   - component: {fileID: 114897783969424680}
   m_Layer: 0
   m_Name: colision suelo
-  m_TagString: Player
+  m_TagString: PlayerSuelo
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1065,7 +1065,7 @@ Rigidbody2D:
   m_GravityScale: 1
   m_Material: {fileID: 0}
   m_Interpolate: 0
-  m_SleepingMode: 1
+  m_SleepingMode: 0
   m_CollisionDetection: 1
   m_Constraints: 4
 --- !u!58 &58322980599957812
@@ -1349,8 +1349,9 @@ MonoBehaviour:
   grounded: 1
   carry: 0
   jumpPower: 8
-  nMaleta: 842
+  nMaleta: 7
   control: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
+  hold: 0
 --- !u!114 &114248849651677404
 MonoBehaviour:
   m_ObjectHideFlags: 1
