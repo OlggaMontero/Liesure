@@ -660,7 +660,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 114229554435518588, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
-  carrito: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
+  carrito: {fileID: 599574057}
   nHab: 73
 --- !u!4 &424836162 stripped
 Transform:
@@ -719,8 +719,7 @@ Prefab:
         type: 2}
       propertyPath: carrito
       value: 
-      objectReference: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf,
-        type: 2}
+      objectReference: {fileID: 599574057}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2676b83756aefff4ba16f5155213d00d, type: 2}
   m_IsPrefabAsset: 0
@@ -1099,6 +1098,12 @@ Prefab:
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 330088f52aed91c4bb835044843ed63b, type: 2}
   m_IsPrefabAsset: 0
+--- !u!114 &599574057 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf,
+    type: 2}
+  m_PrefabInternal: {fileID: 729343590}
+  m_Script: {fileID: 11500000, guid: e63f76d54b816e340852f3263aabd78e, type: 3}
 --- !u!1 &609647812
 GameObject:
   m_ObjectHideFlags: 0
@@ -1487,7 +1492,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 114229554435518588, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
-  carrito: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
+  carrito: {fileID: 599574057}
   nHab: 7
 --- !u!4 &674828086 stripped
 Transform:
@@ -2474,7 +2479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 114229554435518588, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
-  carrito: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
+  carrito: {fileID: 599574057}
   nHab: 531
 --- !u!1 &1014578796
 GameObject:
@@ -3430,8 +3435,7 @@ Prefab:
         type: 2}
       propertyPath: carrito
       value: 
-      objectReference: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf,
-        type: 2}
+      objectReference: {fileID: 599574057}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2676b83756aefff4ba16f5155213d00d, type: 2}
   m_IsPrefabAsset: 0
@@ -3677,7 +3681,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 114229554435518588, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
-  carrito: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
+  carrito: {fileID: 599574057}
   nHab: 331
 --- !u!1001 &1425474252
 Prefab:
@@ -3887,7 +3891,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 114229554435518588, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
-  carrito: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
+  carrito: {fileID: 599574057}
   nHab: 53
 --- !u!1001 &1502338964
 Prefab:
@@ -4299,7 +4303,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 114229554435518588, guid: 7647f8381dc86db48b99bff4b8acc637, type: 2}
-  carrito: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf, type: 2}
+  carrito: {fileID: 599574057}
   nHab: 46
 --- !u!61 &1788238091
 BoxCollider2D:
@@ -4752,8 +4756,7 @@ Prefab:
         type: 2}
       propertyPath: carrito
       value: 
-      objectReference: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf,
-        type: 2}
+      objectReference: {fileID: 599574057}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2676b83756aefff4ba16f5155213d00d, type: 2}
   m_IsPrefabAsset: 0
@@ -4962,8 +4965,7 @@ Prefab:
         type: 2}
       propertyPath: carrito
       value: 
-      objectReference: {fileID: 114167118729447190, guid: 715d0c036e2cc484eb20654cf281eedf,
-        type: 2}
+      objectReference: {fileID: 599574057}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2676b83756aefff4ba16f5155213d00d, type: 2}
   m_IsPrefabAsset: 0

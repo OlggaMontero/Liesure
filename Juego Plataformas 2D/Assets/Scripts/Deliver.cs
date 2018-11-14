@@ -20,6 +20,8 @@ public class Deliver : MonoBehaviour {
 
     void Update()
     {
+        //Debug.Log(carrito.iList.Count);
+
         if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL

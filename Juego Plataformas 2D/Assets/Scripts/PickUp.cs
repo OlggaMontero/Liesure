@@ -39,6 +39,7 @@ public class PickUp : MonoBehaviour
     {
 
         //Debug.Log("Pick up" +player.carry);
+        //Debug.Log(iList.Count);
 
         if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
         {
