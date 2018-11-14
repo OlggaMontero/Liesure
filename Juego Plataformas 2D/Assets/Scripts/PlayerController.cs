@@ -12,6 +12,7 @@ public class PlayerController : MonoBehaviour
     public float jumpPower = 6.5f;
     public int nMaleta;
     public PickUp control;
+    public bool hold;
 
 
     private Rigidbody2D rb2d;
@@ -26,18 +27,22 @@ public class PlayerController : MonoBehaviour
         anim = GetComponent<Animator>();
         carry = false;
         nMaleta = 0;
+        hold = false;
     }
 
     // Update is called once per frame
     void Update()
     {
         anim.SetFloat("Speed", Mathf.Abs(rb2d.velocity.x));
+        anim.SetFloat("MoveY", Mathf.Abs(rb2d.velocity.y));
         anim.SetBool("Grounded", grounded);
         anim.SetBool("Carry", carry);
+        anim.SetBool("Hold", hold);
         carry = control.player.carry;
-        Debug.Log("PC" +carry);
+        //Debug.Log("PC" +carry);
+        //Debug.Log("PC hold " + hold);
 
-        if (Input.GetKeyDown(KeyCode.UpArrow) && grounded)
+        if ((Input.GetKeyDown(KeyCode.Space) || Input.GetKeyDown(KeyCode.JoystickButton0)) && grounded)
         {
             jump = true;
         }

@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+
 
 public class Deliver : MonoBehaviour {
 
@@ -18,7 +20,7 @@ public class Deliver : MonoBehaviour {
 
     void Update()
     {
-        if (inside == true && Input.GetKeyDown(KeyCode.Space))
+        if (inside == true && (Input.GetKeyDown(KeyCode.KeypadEnter) || Input.GetKeyDown(KeyCode.JoystickButton2)))
         {
             if (player != null)                             //Hay que tener cuidado con las referencias NULL
             {
@@ -36,6 +38,10 @@ public class Deliver : MonoBehaviour {
                     }
 
                     carrito.iList.Remove(player.nMaleta);
+                    if (carrito.iList.Count == 0)
+                    {
+                        SceneManager.LoadScene("inicio");
+                    }
                     player.carry = false;
                     
                 }
